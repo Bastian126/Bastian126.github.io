@@ -1,0 +1,29 @@
+<extends><index class="html"></index></extends>
+<main>
+    <div class="max-w-md mx-auto">
+        <h1 class="text-2xl font-bold mb-4">Register</h1>
+        <form method="POST" action="C:\ProyectosW\adhierete\templates\register.html" class="space-y-4">
+            <div>
+                <label for="username" class="block mb-1">Username</label>
+                <input type="text" id="username" name="username" required class="w-full px-3 py-2 border rounded-md">
+            </div>
+            <div>
+                <label for="email" class="block mb-1">Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-3 py-2 border rounded-md">
+            </div>
+            <div>
+                <label for="password" class="block mb-1">Password</label>
+                <input type="password" id="password" name="password" required class="w-full px-3 py-2 border rounded-md">
+            </div>
+            <div>
+                <label for="role" class="block mb-1">Role</label>
+                <select id="role" name="role" required class="w-full px-3 py-2 border rounded-md">
+                    <option value="Client">Client</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Student">Student</option>
+                </select>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Register</button>
+        </form>
+    </div>
+</main>

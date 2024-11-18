@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <header>
+        <meta charset="utf-8" />
+        <meta name="adeherencia" content="Mejora la adeherencia terapeutica de tus pacientes">
+        <h1>Adhiérete</h1>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="C:\ProyectosW\adhierete\static\css\style.css" rel="stylesheet">
+    </header>
+
+    <body class="min-h-screen flex flex-col bg-blue-150">
+        <div id="root"></div>
+        <nav class="bg-gray-800 text-white">
+            <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+                <a href="c:\ProyectosW\adhierete\templates\index.html" class="text-xl font-bold">Adhiérete</a>
+                <div>
+                    <if current-user.is-authenticated>
+                        <a href="C:\ProyectosW\adhierete\templates\dashboard.html" class="px-3 py-2 rounded hover:bg-gray-700">Dashboard</a>
+                        <a href="" class="px-3 py-2 rounded hover:bg-gray-700">Logout</a>
+                    <else>
+                        <a href="C:\ProyectosW\adhierete\templates\login.html" class="px-3 py-2 rounded hover:bg-gray-700">Login</a>
+                        <a href="C:\ProyectosW\adhierete\templates\register.html" class="px-3 py-2 rounded hover:bg-gray-700">Register</a>
+                    </else>  
+                    </if> 
+                </div>
+            </div>
+        </nav>
+        <main class="container mx-auto mt-8 px-4 flex-grow">
+            <section>
+                <h1>La web para mejorar la adeherencia terapéutica</h1>
+                    <h2><strong>Adherencia terapéutica</strong></h2>
+                    <p> 
+                        Es el grado en el que una persona cumple con las recomendaciones de un profesional de la salud para tratar un problema de salud. 
+                        Esto incluye tomar la medicación, seguir una dieta y hacer cambios en el estilo de vida.
+                    
+                        <Strong>La adherencia terapéutica es importante,</Strong> 
+                        ya que de no seguir las indicaciones puede tener graves consecuencias, como:
+                        <ul>
+                            <li>No aliviar los síntomas o curar la enfermedad</li>
+                            <li>Aumento del costo de la atención médica</li>
+                            <li>Empeoramiento de la calidad de vida</li>
+                        </ul>
+                    </p>
+            </section>
+            <section>
+                <h2>Servicios</h2>
+                <p>
+                    Está página fue diseñada para que los profesionales de la salud,
+                    puedan enviar información relevante como videos, infográfias y otras ayudas 
+                    didacticas las cuales facilitan la educación dirigida a los pacientes, 
+                    entre las ayudas más releventes tenemos el de <strong>toma de medicamentos</strong> 
+                    el cual se envía en forma de imagen de manera que sea de facíl acceso, 
+                    además de poseer la función <strong>alerta</strong>, la cual por medio de un chat! de Whatsapp 
+                    avisara al paciente la hora de toma de medicamento, y otras recomendaciones para evitar 
+                    interacciones Alimento-Medicamento, Liquido-Medicamento, Medicamento-Horario.
+                    este último se refiere a si el medicamentose debe tomar en el día o en la noche.
+                </p>
+            </section>
+        </main>
+        
+        <aside>
+            <h3>Artículos Relacionados</h3>
+            <ul>
+                <li><a href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1870-72032018000300226#:~:text=La%20Organizaci%C3%B3n%20Mundial%20de%20la%20Salud%20(OMS)%20define%20%E2%80%9Cadherencia,un%20prestador%20de%20asistencia%20sanitaria%E2%80%9D."> Adherencia terapéutica OMS</a></li>
+                <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7022018/">Causas, consecuencias y estrategias de mejora</a></li>
+            </ul>
+        </aside>
+        
+        <footer>
+            <p>&copy;2024 Adhiérete, Todos los derechos reservados</p>
+            <p><a href="sebastoro25@gmail.com">sebastoro25@gmail.com</a></p>
+        </footer>
+    </body>
+</html>
